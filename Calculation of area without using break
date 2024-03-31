@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main()
+{
+    int ra,l,b,ba,h,a,ca;
+    
+    
+    printf("Enter the Number to calculate area of 1-Circle 2-Rectangle 3-Triangle \n");
+    scanf("%d",&ca);
+    
+    switch (ca)
+    {
+        case 1: 
+        printf("Enter the Radius of Circle\n");
+        scanf("%d",&ra);
+        a = ra*ra*3.14;
+        printf("Area of Circle is %d",a);
+        
+    
+        case 2: 
+        printf("Enter the length of the rectangle\n");
+        scanf("%d",&l);
+        printf("Enter the breadth of the rectangle\n");
+        scanf("%d",&b);
+        a = l*b;
+        printf("Area of Rectangle is %d",a);
+        
+    
+        case 3:
+        printf("Enter the Base of the triangle\n");
+        scanf("%d",&ba);
+        printf("Enter the height of the triangle\n");
+        scanf("%d",&h);
+        a = 0.5*ba*h;
+        printf("Area of Triangle is %d",a);
+        
+    
+    default: 
+    printf("Wrong input");
+    }
+    
+    
+    
+    return 0;
+}

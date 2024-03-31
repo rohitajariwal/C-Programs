@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int a,b;
+    printf("Enter the first number\n");
+    scanf("%d",&a);
+    printf("Enter the second number\n");
+    scanf("%d",&b);
+    if(a%b == 0)
+    printf("yes\n");
+    else
+    printf("no\n");
+    
+    printf("End of the program");
+
+    return 0;
+}

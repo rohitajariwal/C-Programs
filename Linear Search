@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main()
+{
+    int n, i, s;
+    int arr[n];
+
+    printf("Enter the Size of array \n");
+    scanf("%d",&n);
+    printf("Enter the values: \n");
+    for ( i = 0; i < n; i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    printf("Enter the Value you want to search\n");
+    scanf("%d",&s);
+    for ( i = 0; i < n; i++)
+    {
+        if (arr[i] == s)
+        {
+            printf("The %d value is founded at %d position",s,i+1);
+            break;
+        }
+        
+    }
+    if (i == n)
+    {
+        printf("Value not found");
+    }
+    return 0;
+}

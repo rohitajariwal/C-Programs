@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main()
+{
+    int calls;
+    float bill;
+    
+    printf("Enter number of calls\n");
+    scanf("%d",&calls);
+    
+    if (calls<=150)
+        {
+            bill = 0;
+        }
+    else if (calls>=151 && calls<=250)
+        {
+            bill = calls*0.9;
+        }
+    else if (calls>=251 && calls<=400)
+        {
+            bill = calls*1.2;
+        }
+    else 
+        {
+            bill = calls*1.5;
+        }
+    printf("Your bill is %f",bill);
+    return 0;
+}

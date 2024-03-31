@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+    int t,n;
+    t=0;
+    for(n=1; n<=200; n++)
+    {
+        t=t+n;
+    }
+    printf("%d",t);
+
+    return 0;
+}

@@ -1,0 +1,7 @@
+public class Main {
+
+   public static void main(String[] args) {
+       int[][] marks = {{98, 97, 95},{56,97,76},{10,12,24},{98, 97, 950000}};
+       System.out.println(marks[3][2]);
+   }
+}

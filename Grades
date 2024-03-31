@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main()
+{
+    char cgrade;
+    int imarks;
+    
+    printf("Enter Marks\n");
+    scanf("%d",&imarks);
+    
+    if (imarks<=10 && imarks>=9)
+            {
+                cgrade = 'A';
+                printf("Grade: %c",cgrade);
+            }    
+    else if (imarks<=8 && imarks>=7)
+            {
+                cgrade = 'B';
+                printf("Grade: %c",cgrade);
+            }
+    else if (imarks<=6 && imarks>=5)
+            {
+                cgrade = 'C';
+                printf("Grade: %c",cgrade);
+            }
+    else if (imarks<=4 && imarks>=3)
+            {
+                cgrade = 'D';
+                printf("Grade: %c",cgrade);
+            }
+    else if (imarks<3)
+            {
+                cgrade = 'F';
+                printf("Grade: %c",cgrade);
+            }
+    else 
+            {
+                printf("wrong Input");
+            }
+    
+    return 0;
+}

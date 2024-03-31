@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int num, i, sum, t, table;
+    
+    printf("Enter the value\n");
+    scanf("%d",&num);
+    printf("Enter how many times\n");
+    scanf("%d",&t);
+    
+    for(i=1; i<=t; i++)
+    table = num*i;
+    sum = table;
+    sum = table + sum;
+    
+    printf("The sum of the no. till %d is\n",t);
+    printf("%d",sum);
+
+    return 0;
+}

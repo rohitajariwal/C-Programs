@@ -1,0 +1,120 @@
+#include <stdio.h>
+
+int add(int,int);
+int sub(int,int);
+int mul(int,int);
+int divi(int,int);
+int fac(int);
+int rev(int);
+
+int main()
+{
+    int a,b,c;
+    char cho;
+    
+    printf("Enter your choice a-Addition s-Substraction m-Multiplication d-Division f-Factorial r-Reverse_a_number \n");
+    scanf("%c",&cho);
+    
+    switch (cho)
+    {
+    case 'a': 
+        printf("Addition\n");
+        printf("Enter the first value:\n");
+        scanf("%d",&a);
+        printf("Enter the second value:\n");
+        scanf("%d",&b);
+        c = add(a,b);
+        break;
+    case 's': 
+        printf("Substraction\n");
+        printf("Enter the first value:\n");
+        scanf("%d",&a);
+        printf("Enter the second value:\n");
+        scanf("%d",&b);
+        c = sub(a,b);
+        break;
+    case 'm': 
+        printf("Multiplication\n");
+        printf("Enter the first value:\n");
+        scanf("%d",&a);
+        printf("Enter the second value:\n");
+        scanf("%d",&b);
+        c = mul(a,b);
+        break;
+    case 'd': 
+        printf("Division\n");
+        printf("Enter the first value:\n");
+        scanf("%d",&a);
+        printf("Enter the second value:\n");
+        scanf("%d",&b);
+        c = divi(a,b);
+        break;
+    case 'f': 
+        printf("Factorial\n");
+        printf("Enter the value:\n");
+        scanf("%d",&a);
+        c = fac(a);
+        break;
+    case 'r': 
+        printf("Reverse_a_number\n");
+        printf("Enter the number:\n");
+        scanf("%d",&a);
+        c = rev(a);
+        break;
+    default: 
+        printf("Wrong Input\n");
+    }
+}
+
+int add(int x,int y)
+{
+    int z;
+    z = x+y;
+    printf("The Addition is %d",z);
+    return(z);
+}
+int sub(int x,int y)
+{
+    int z;
+    z = x-y;
+    printf("The Substraction is %d",z);
+    return(z);
+}
+int mul(int x,int y)
+{
+    int z;
+    z = x*y;
+    printf("The Multiplication is %d",z);
+    return(z);
+}
+int divi(int x,int y)
+{
+    int z;
+    z = x/y;
+    printf("The Division is %d",z);
+    return(z);
+}
+int fac(int x)
+{
+    int i;
+    int z = 1;
+    for(i=1; i<=x; i++)
+    {
+        z = z*i;
+    }
+    printf("The Factorial is %d",z);
+    return(z);
+}
+int rev(int x)
+{
+    int r,s=0;
+    
+    for (x; x>0; )
+    {
+        r=x%10;
+        s=s*10+r;  
+        x=x/10;
+    }
+
+    printf("The Reverse Number is %d",s);
+}

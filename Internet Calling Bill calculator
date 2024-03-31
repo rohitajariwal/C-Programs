@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main()
+{
+    int calls, bill, ck;
+    
+    printf("Enter the number of calls\n");
+    scanf("%d",&calls);
+    
+    ck = calls % 10;
+    switch (ck)
+    {
+       case 1:
+       bill = 200;
+       break; 
+       
+       case 10: 
+       case 11:
+       case 12:
+       case 13:
+       case 14:
+       bill = 200 + ( calls * 0.60);
+       break;
+       
+       case 15:
+       case 16:
+       case 17:
+       case 18:
+       case 19:
+       bill = 200 + ( calls * 0.50);
+       break;
+       
+       default:
+       bill = 200 + (calls * 0.40);
+       break;
+    }
+
+    printf("Bill is Rs.%d",bill);
+    return 0;
+}

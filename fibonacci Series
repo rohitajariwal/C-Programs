@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int a,b,f;
+    a=0;
+    b=1;
+    printf("%d\n%d\n",a,b);
+    for(f=1; f<=34;)
+    {
+        printf("%d\n",f);
+        a=b;
+        b=f;
+        f=a+b;
+    }
+
+    return 0;
+}

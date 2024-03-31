@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main()
+{
+    int a,b,op,vl;
+    
+    
+    printf("Enter the first value\n");
+    scanf("%d",&a);
+    printf("Enter the operator 1 is assigned as + \n 2 is assigned as - \n 3 is assigned as * \n 4 is assigned as /\n");
+    scanf("%d",&op);
+    printf("Enter the second value\n");
+    scanf("%d",&b);
+    
+    
+    switch (op)
+    {
+        case 1: vl = a+b;
+        break;
+        case 2: vl = a-b;
+        break;
+        case 3: vl = a*b;
+        break;
+        case 4: vl = a/b;
+        break;
+        default: vl = 0;
+        break;    
+    }
+        printf("Answer is %d",vl);
+    return 0;
+}

@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int n,k,v,nt,kt;
+    
+    printf("Enter the value till you want tables to be printed");
+    scanf("%d",&nt);
+    printf("Enter the value till how many times of one number's table is to be written");
+    scanf("%d",&kt);
+    
+    for (n=1; n<=nt; n++)
+    {
+        printf("The table of %d starts\n",n);
+        for (k=1; k<=kt; k++)
+            {
+                v = n*k;
+                printf("%d\n",v);
+            }
+    }
+    
+    return 0;
+}

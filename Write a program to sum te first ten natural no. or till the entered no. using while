@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int num, i=1, t;
+    
+    printf("Enter the value to do sum till the value\n");
+    scanf("%d",&num);
+    t = num;
+    while(i<t)
+    {
+        num = num + i;
+        i++;
+    }
+    printf("The sum is %d",num);
+    return 0;
+}

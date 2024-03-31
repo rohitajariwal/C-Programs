@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int n,o;
+    
+    printf("An (Big)odd Number\n");
+    scanf("%d",&n);
+    printf("Here we go\n");
+    
+    for(o=n; o>=0; o-- )
+    {
+        if(o%2==1)
+        printf("%d\n",o);
+    }
+
+    return 0;
+}

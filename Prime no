@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c;
+    c=0;
+    printf("Enter the value\n");
+    scanf("%d",&a);
+    
+    for(b=1; b<=a; b++)
+    {
+        if(a % b ==0)
+        c++;
+    }
+    if (c==2)
+    printf("Its a prime no.");
+    else
+    printf("Its not a prime no.");
+    return 0;
+}
